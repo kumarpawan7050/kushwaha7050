@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login / Register UI</title>
+<link rel="stylesheet" href="02.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#0a0a0f;
+}
+
+/* Main Box */
+.container{
+    width:800px;
+    height:700px;
+    position:relative;
+    border:2px solid #1fffd5;
+    box-shadow:0 0 25px #1fffd5;
+    scroll-behavior: smooth;
+}
+
+/* Panels */
+.panel{
+    width:50%;
+    height: 100%;
+    position:absolute;
+    padding:40px;
+    color:white;
+    background:#0d0d12;
+}
+
+.left{
+    left:0;
+    clip-path: polygon(10 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.right{
+    right:0;
+    clip-path: polygon(10 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* Titles */
+h2{
+    margin-bottom:25px;
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    background:transparent;
+    border:none;
+    border-bottom:1px solid #1fffd5;
+    color:white;
+    outline:none;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    background:#1fffd5;
+    border:none;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:20px;
+}
+
+/* Text */
+p{
+    margin-top:15px;
+    font-size:14px;
+}
+
+a{
+    color:#1fffd5;
+    text-decoration:none;
+    cursor:pointer;
+}
+
+/* Welcome Text */
+.welcome{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    color:white;
+}
+
+.welcome.left-text{
+    left:60px;
+}
+
+.welcome.right-text{
+    right:60px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+    <div class="panel left">
+        <div class="welcome left-text">WELCOME!<br>
+            My World</div>
+    </div>
+
+    <!-- Register -->
+    <form class="panel right" method="post" action="/Register">
+        <h2>Register</h2>
+        <label>Username</label>
+        <input type="text" placeholder="Enter Username">
+        <label>Email ID</label>
+        <input type="email" placeholder="Enter Email">
+        <label>Mobile number</label>
+        <input type="phone no" placeholder="Enter Mobile number">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password">
+        <label>Confirm Password</label>
+        <input type="confirm password" placeholder="Re Enter Password">
+        <button>Register</button>
+        <p>Already have an account? <a rel="html" href="login.html">Login</p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

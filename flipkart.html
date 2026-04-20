@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkHub - Best Online Shopping</title>
+    <link rel="stylesheet" href="flipkart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+ <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <span class="logo">
+                    <h2><i class="fas fa-shopping-bag"></i>DarkHub.in </h2>
+                </span>
+                
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search for products, brands and more...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+
+                <div class="header-actions">
+                    <a class="login-btn"  href="login.html"> Login</a>
+                    <a class="cart-icon" href="add-to-cart-DarkHub.html">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Home & Kitchen</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Books</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Great Deals on Your Favorite Brands</h1>
+                    <p>Up to 70% off on Electronics, Fashion & More</p>
+                    <button class="cta-btn">Shop Now</button>
+                </div>
+                <div class="hero-slider">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Banner">
+                </div>
+            </section>
+
+            <!-- Categories -->
+            <section class="categories">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <div class="category-card" data-category="electronics">
+                        <i class="fas fa-laptop"></i>
+                        <h3>Electronics</h3>
+                    </div>
+                    <div class="category-card" data-category="fashion">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Fashion</h3>
+                    </div>
+                    <div class="category-card" data-category="home">
+                        <i class="fas fa-home"></i>
+                        <h3>Home</h3>
+                    </div>
+                    <div class="category-card" data-category="sports">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3>Sports</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Products -->
+            <section class="products">
+                <h2>Featured Products</h2>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products will be loaded by JavaScript -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Shopping Cart</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be populated here -->
+            </div>
+            <div class="cart-total">
+                <h3>Total: ₹<span id="cartTotal">0</span></h3>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Customer Care</h3>
+                    <p>Help Center<br>Track Order<br>Returns</p>
+                </div>
+                <div class="footer-section">
+                    <h3>ShopKart</h3>
+                    <p>About Us<br>Careers<br>Press</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Make Money With Us</h3>
+                    <p>Sell on ShopKart<br>Become an Affiliate</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a class="fab fa-facebook" href=""></a>
+                        <i class="fab fa-twitter"></i>
+                        <a class="fab fa-instagram" href="https://www.instagram.com/itzs__kushwahapawan__02?igsh=MWk1c2M1cGZva2hwYg=="></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 DarkHub.in /Online Shopping websites.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="flipkart.js"></script>
+</body>
+</html>
